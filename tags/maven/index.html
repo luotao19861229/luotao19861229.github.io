@@ -3,20 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | 欢迎您</title>
+  <title>Tag: maven | 欢迎您</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2015/01/07/hello-world/">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欢迎您">
+<meta property="og:url" content="http://yoursite.com/tags/maven/">
 <meta property="og:site_name" content="欢迎您">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
-Quick">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in trobuleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="欢迎您">
+<meta name="twitter:description">
 
   
     <link rel="alternative" href="/atom.xml" title="欢迎您" type="application/atom+xml">
@@ -64,12 +61,18 @@ Quick">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-idea-创建web-maven工程" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/07/hello-world/" class="article-date">
-  <time datetime="2015-01-07T05:44:48.000Z" itemprop="datePublished">1月 7 2015</time>
+    <a href="/2015/02/11/idea-创建web-maven工程/" class="article-date">
+  <time datetime="2015-02-11T08:03:47.000Z" itemprop="datePublished">2月 11 2015</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/idea/">idea</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -77,8 +80,8 @@ Quick">
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Hello World
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/11/idea-创建web-maven工程/">idea 创建web maven工程</a>
     </h1>
   
 
@@ -86,52 +89,27 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+        <p>1.Add Archetype</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;groupId&gt;org.apache.maven.archetypes&lt;/groupId&gt;</div><div class="line">&lt;artifactId&gt;maven-archetype-webapp&lt;/artifactId&gt;</div><div class="line">&lt;version&gt;<span class="number">1.0</span>&lt;/version&gt;</div></pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p><img src="./img/20150211/AddArchetype.png" alt="Add Archetype"><br>2.选中 maven-archetype-webapp<br>next &gt; enter artifactId<br>next &gt; next &gt; enter module name<br>Finish<br><img src="./img/20150211/use maven-archetype.png" alt="use maven-archetype-webapp"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/07/hello-world/" data-id="nqzc6hjmw46xibxj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/02/11/idea-创建web-maven工程/" data-id="zilnjrx8ijzd2g8t" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/idea/">idea</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/">maven</a></li></ul>
+
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2015/01/09/枚举类在spring-mvc和myibatis中的应用/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          枚举类在spring-mvc和myibatis中的应用
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
 </article>
 
+
+  
+  
 </section>
         
           <aside id="sidebar">
