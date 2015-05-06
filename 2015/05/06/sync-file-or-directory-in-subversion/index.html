@@ -3,17 +3,35 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015/2 | 欢迎您</title>
+  <title>sync files using svn export add commit | 欢迎您</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="欢迎您">
-<meta property="og:url" content="http://luotao19861229.github.io/archives/2015/02/">
+  <meta name="description" content="1.Delete OLD Files And Export From SVN
+123rem delete old comrd /s /q java\comsvn export http://svn1***.com/***/src/main/java/com/ java/com/ --force
+
+2.Add To SVN
+1svn add java/* --force
+
+3.Commit To S">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sync files using svn export add commit">
+<meta property="og:url" content="http://luotao19861229.github.io/2015/05/06/sync-file-or-directory-in-subversion/">
 <meta property="og:site_name" content="欢迎您">
-<meta property="og:description">
+<meta property="og:description" content="1.Delete OLD Files And Export From SVN
+123rem delete old comrd /s /q java\comsvn export http://svn1***.com/***/src/main/java/com/ java/com/ --force
+
+2.Add To SVN
+1svn add java/* --force
+
+3.Commit To S">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="欢迎您">
-<meta name="twitter:description">
+<meta name="twitter:title" content="sync files using svn export add commit">
+<meta name="twitter:description" content="1.Delete OLD Files And Export From SVN
+123rem delete old comrd /s /q java\comsvn export http://svn1***.com/***/src/main/java/com/ java/com/ --force
+
+2.Add To SVN
+1svn add java/* --force
+
+3.Commit To S">
 
   
     <link rel="alternative" href="/atom.xml" title="欢迎您" type="application/atom+xml">
@@ -70,16 +88,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-idea-创建web-maven工程" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-sync-file-or-directory-in-subversion" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/02/11/idea-创建web-maven工程/" class="article-date">
-  <time datetime="2015-02-11T08:03:47.000Z" itemprop="datePublished">2月 11 2015</time>
+    <a href="/2015/05/06/sync-file-or-directory-in-subversion/" class="article-date">
+  <time datetime="2015-05-06T07:56:11.000Z" itemprop="datePublished">5月 6 2015</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/idea/">idea</a>
+    <a class="article-category-link" href="/categories/svn/">svn</a>
   </div>
 
   </div>
@@ -89,8 +105,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/02/11/idea-创建web-maven工程/">idea 创建web maven工程</a>
+    <h1 class="article-title" itemprop="name">
+      sync files using svn export add commit
     </h1>
   
 
@@ -98,27 +114,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.Add Archetype</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;groupId&gt;org.apache.maven.archetypes&lt;/groupId&gt;</div><div class="line">&lt;artifactId&gt;maven-archetype-webapp&lt;/artifactId&gt;</div><div class="line">&lt;version&gt;<span class="number">1.0</span>&lt;/version&gt;</div></pre></td></tr></table></figure>
+        <p>1.Delete OLD Files And Export From SVN</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rem delete old com</div><div class="line">rd /s /q java\com</div><div class="line">svn <span class="keyword">export</span> http://svn1***.com/***/src/main/java/com/ java/com/ --force</div></pre></td></tr></table></figure>
 
-<p><img src="http://luotao19861229.github.io/img/20150211/AddArchetype.png" alt="Add Archetype"><br>2.选中 maven-archetype-webapp<br>next &gt; enter artifactId<br>next &gt; next &gt; enter module name<br>Finish<br><img src="http://luotao19861229.github.io/img/20150211/use maven-archetype.png" alt="use maven-archetype-webapp"></p>
+<p>2.Add To SVN</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn add java/* --force</div></pre></td></tr></table></figure>
+
+<p>3.Commit To SVN</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn commit -m <span class="string">"sync comment"</span>  java</div></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://luotao19861229.github.io/2015/02/11/idea-创建web-maven工程/" data-id="pexb0zdgesh2gxkf" class="article-share-link">Share</a>
+      <a data-url="http://luotao19861229.github.io/2015/05/06/sync-file-or-directory-in-subversion/" data-id="uyxb9n9fk8xfjn3f" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/idea/">idea</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/">maven</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svn/">svn</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sync/">sync</a></li></ul>
 
     </footer>
   </div>
   
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/02/11/idea-创建web-maven工程/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">idea 创建web maven工程</div>
+    </a>
+  
+</nav>
+
+  
 </article>
 
-
-  
-  
 </section>
         
           <aside id="sidebar">

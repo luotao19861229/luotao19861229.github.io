@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[欢迎您]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://luotao19861229.github.io/"/>
+  <updated>2015-05-06T08:13:25.986Z</updated>
+  <id>http://luotao19861229.github.io/</id>
+  
+  <author>
+    <name><![CDATA[luotao]]></name>
+    <email><![CDATA[luotao19861229@163.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[sync files using svn export add commit]]></title>
+    <link href="http://luotao19861229.github.io/2015/05/06/sync-file-or-directory-in-subversion/"/>
+    <id>http://luotao19861229.github.io/2015/05/06/sync-file-or-directory-in-subversion/</id>
+    <published>2015-05-06T07:56:11.000Z</published>
+    <updated>2015-05-06T08:12:57.000Z</updated>
+    <content type="html"><![CDATA[<p>1.Delete OLD Files And Export From SVN</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rem delete old com</div><div class="line">rd /s /q java\com</div><div class="line">svn <span class="keyword">export</span> http://svn1***.com/***/src/main/java/com/ java/com/ --force</div></pre></td></tr></table></figure>
+
+<p>2.Add To SVN</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn add java/* --force</div></pre></td></tr></table></figure>
+
+<p>3.Commit To SVN</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn commit -m <span class="string">"sync comment"</span>  java</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1.Delete OLD Files And Export From SVN</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><di]]>
+    </summary>
+    
+      <category term="svn" scheme="http://luotao19861229.github.io/tags/svn/"/>
+    
+      <category term="sync" scheme="http://luotao19861229.github.io/tags/sync/"/>
+    
+      <category term="svn" scheme="http://luotao19861229.github.io/categories/svn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[idea 创建web maven工程]]></title>
+    <link href="http://luotao19861229.github.io/2015/02/11/idea-%E5%88%9B%E5%BB%BAweb-maven%E5%B7%A5%E7%A8%8B/"/>
+    <id>http://luotao19861229.github.io/2015/02/11/idea-创建web-maven工程/</id>
+    <published>2015-02-11T08:03:47.000Z</published>
+    <updated>2015-05-06T08:05:36.000Z</updated>
+    <content type="html"><![CDATA[<p>1.Add Archetype</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;groupId&gt;org.apache.maven.archetypes&lt;/groupId&gt;</div><div class="line">&lt;artifactId&gt;maven-archetype-webapp&lt;/artifactId&gt;</div><div class="line">&lt;version&gt;<span class="number">1.0</span>&lt;/version&gt;</div></pre></td></tr></table></figure>
+
+<p><img src="http://luotao19861229.github.io/img/20150211/AddArchetype.png" alt="Add Archetype"><br>2.选中 maven-archetype-webapp<br>next &gt; enter artifactId<br>next &gt; next &gt; enter module name<br>Finish<br><img src="http://luotao19861229.github.io/img/20150211/use maven-archetype.png" alt="use maven-archetype-webapp"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1.Add Archetype</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><]]>
+    </summary>
+    
+      <category term="idea" scheme="http://luotao19861229.github.io/tags/idea/"/>
+    
+      <category term="maven" scheme="http://luotao19861229.github.io/tags/maven/"/>
+    
+      <category term="idea" scheme="http://luotao19861229.github.io/categories/idea/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[枚举类在spring-mvc和myibatis中的应用]]></title>
+    <link href="http://luotao19861229.github.io/2015/01/09/%E6%9E%9A%E4%B8%BE%E7%B1%BB%E5%9C%A8spring-mvc%E5%92%8Cmyibatis%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/"/>
+    <id>http://luotao19861229.github.io/2015/01/09/枚举类在spring-mvc和myibatis中的应用/</id>
+    <published>2015-01-09T09:43:10.000Z</published>
+    <updated>2015-01-12T07:03:01.000Z</updated>
+    <content type="html"><![CDATA[<p>1.数据库创建时 地段声明为 enum或者varchar </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">`dependDateType` varchar(<span class="number">50</span>) NOT NULL COMMENT <span class="string">'依赖日期类型'</span>,</div><div class="line">`calculateType` varchar(<span class="number">50</span>) NOT NULL COMMENT <span class="string">'计算类型'</span>,</div></pre></td></tr></table></figure>
+
+
+<p>2.该表对应的pojo 类 字段 声明为枚举类型</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//依赖日期类型</div><div class="line">private DependDateSearchTypeEnum dependDateType;</div><div class="line">//计算类型</div><div class="line">private CalculateTypeEnum calculateType;</div></pre></td></tr></table></figure>
+
+<p>3.枚举类 声明    </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">public enum CalculateTypeEnum {</div><div class="line">	Once(<span class="number">1</span>,<span class="string">"一次性"</span>),Constant(<span class="number">2</span>,<span class="string">"持续性"</span>);</div><div class="line">	private Integer value;</div><div class="line">	private String name;</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>4.ibatis xml 文件没有任何变化 但在查询数据库时 会自动封装成枚举类型; spring Controller 传入的参数也可以自动封装成枚举对象</p>
+<p>5.好处,代码更容易理解 更容易扩展。<br>a.java中和枚举类型相关的代码可以 放在枚举类中 以便公用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">DependDateSearchTypeEnum</div><div class="line">public Date getStartDate()</div><div class="line">public Date getEndDate()</div></pre></td></tr></table></figure>
+
+<p>b.java代码中避免使用数字 更容易理解</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">switch (reportDownTask.getReportType()){</div><div class="line">	<span class="keyword">case</span> TaskConstants.TASK_SEARCHWORD_REPORT:</div><div class="line">	  <span class="keyword">break</span>;</div><div class="line">	<span class="keyword">case</span> TaskConstants.TASK_PLAN_AREA_REPORT:</div><div class="line">	  <span class="keyword">break</span>;</div><div class="line">	<span class="keyword">case</span> TaskConstants.TASK_DOWNLOAD_PERIOD_REPORT:</div><div class="line">	  <span class="keyword">break</span>;</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>c.vm展示可以直接调用 显示中文名</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;td&gt;$!reportDownTask.dependDateType.name&lt;/td&gt;</div><div class="line">&lt;td&gt;$!reportDownTask.calculateType.name&lt;/td&gt;</div></pre></td></tr></table></figure>
+
+<p>d.vm展示中的判断 使用 枚举类的名字 比数字更容易理解</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#if($reportDownTask.calculateType=='Constant')</span></div><div class="line">  &lt;span class=<span class="string">"mr25"</span> onclick=<span class="string">"searchWords.manualyTrigger(<span class="variable">$reportDownTask</span>.Id);"</span>&gt;手动下载&lt;/span&gt;</div><div class="line"><span class="comment">#end</span></div></pre></td></tr></table></figure>
+
+<p>e.vm中下拉框的使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">view.addAttribute(<span class="string">"calculateTypeEnumInfo"</span>, CalculateTypeEnum.values());</div><div class="line">&lt;div&gt;</div><div class="line">  报表平台：</div><div class="line">	&lt;select id=<span class="string">"calculateType"</span> name=<span class="string">"calculateType"</span>&gt;</div><div class="line">	   <span class="comment">#foreach($typeEnum in $calculateTypeEnumInfo)</span></div><div class="line">			&lt;option <span class="comment">#if($!typeEnum==$!entry.calculateType||(!$entry.calculateType&&$!typeEnum=='Constant'))</span></div><div class="line">			selected <span class="comment">#end value="$!typeEnum"&gt;$!typeEnum.name&lt;/option&gt;</span></div><div class="line">	   <span class="comment">#end</span></div><div class="line">	&lt;/select&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+
+<p>6.不足<br>数据存储 使用varchar 可能会导致存储空间浪费和 查询效率的牺牲     </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1.数据库创建时 地段声明为 enum或者varchar </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://luotao19861229.github.io/2015/01/07/hello-world/"/>
+    <id>http://luotao19861229.github.io/2015/01/07/hello-world/</id>
+    <published>2015-01-07T05:44:48.000Z</published>
+    <updated>2015-01-12T06:47:42.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
