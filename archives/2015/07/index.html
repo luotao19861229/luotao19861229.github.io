@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: svn | 欢迎您</title>
+  <title>Archives: 2015/7 | 欢迎您</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="欢迎您">
-<meta property="og:url" content="http://luotao19861229.github.io/categories/svn/">
+<meta property="og:url" content="http://luotao19861229.github.io/archives/2015/07/">
 <meta property="og:site_name" content="欢迎您">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -70,14 +70,14 @@
     <div class="outer">
       <section id="main">
   
-    <article id="post-sync-file-or-directory-in-subversion" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ImageIOCacheDirectory" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/05/06/sync-file-or-directory-in-subversion/" class="article-date">
-  <time datetime="2015-05-06T07:56:11.000Z" itemprop="datePublished">5月 6 2015</time>
+    <a href="/2015/07/09/ImageIOCacheDirectory/" class="article-date">
+  <time datetime="2015-07-09T03:08:12.000Z" itemprop="datePublished">7月 9 2015</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/svn/">svn</a>
+    <a class="article-category-link" href="/categories/java/">java</a>
   </div>
 
   </div>
@@ -88,7 +88,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/05/06/sync-file-or-directory-in-subversion/">sync files using svn export add commit</a>
+      <a class="article-title" href="/2015/07/09/ImageIOCacheDirectory/">ImageIOCacheDirectory</a>
     </h1>
   
 
@@ -96,27 +96,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.Delete OLD Files And Export From SVN</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rem delete old com</div><div class="line">rd /s /q java\com</div><div class="line">svn <span class="keyword">export</span> http://svn1***.com/***/src/main/java/com/ java/com/ --force</div></pre></td></tr></table></figure>
-
-<p>2.Add To SVN</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn add java/* --force</div></pre></td></tr></table></figure>
-
-<p>3.Commit To SVN</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn commit -m <span class="string">"sync comment"</span>  java</div></pre></td></tr></table></figure>
+        <p>1.Using ImageIO to get picture size,we got a problem that were<br>  Caused by: java.nio.file.NoSuchFileException: /export/Domains/<em>.</em>.com/server1/temp/imageio5308592920702400788.tmp<br>then we found that Directory(server1)  had no sub-direcoty named temp,that cased that problem. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">BufferedImage <span class="built_in">source</span>Img =ImageIO.read(new FileInputStream(picture)); call </div><div class="line">ImageInputStream.createInputStreamInstance(Object input,boolean useCache,File cacheDir);</div><div class="line">//we can <span class="keyword">set</span> cacheDir by following</div><div class="line">ImageIO.setCacheDirectory(new File(<span class="string">"F:\\tools\\"</span>));</div><div class="line">//<span class="keyword">if</span> we not <span class="keyword">set</span>, dir will be temporary directory</div><div class="line">private static final Path tmpdir =Paths.get(<span class="keyword">do</span>Privileged(new GetPropertyAction(<span class="string">"java.io.tmpdir"</span>)));</div><div class="line"><span class="keyword">if</span> (dir == null) dir = tmpdir;</div></pre></td></tr></table></figure>
 
 
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://luotao19861229.github.io/2015/05/06/sync-file-or-directory-in-subversion/" data-id="uyxb9n9fk8xfjn3f" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://luotao19861229.github.io/2015/07/09/ImageIOCacheDirectory/" data-id="z3c58mnhuvlib7ec" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
 
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svn/">svn</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sync/">sync</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ImageIO/">ImageIO</a></li></ul>
 
     </footer>
   </div>

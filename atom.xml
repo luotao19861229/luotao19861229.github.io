@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://luotao19861229.github.io/"/>
-  <updated>2015-05-06T08:13:25.986Z</updated>
+  <updated>2015-07-09T03:28:09.542Z</updated>
   <id>http://luotao19861229.github.io/</id>
   
   <author>
@@ -13,6 +13,26 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[ImageIOCacheDirectory]]></title>
+    <link href="http://luotao19861229.github.io/2015/07/09/ImageIOCacheDirectory/"/>
+    <id>http://luotao19861229.github.io/2015/07/09/ImageIOCacheDirectory/</id>
+    <published>2015-07-09T03:08:12.000Z</published>
+    <updated>2015-07-09T03:21:50.000Z</updated>
+    <content type="html"><![CDATA[<p>1.Using ImageIO to get picture size,we got a problem that were<br>  Caused by: java.nio.file.NoSuchFileException: /export/Domains/<em>.</em>.com/server1/temp/imageio5308592920702400788.tmp<br>then we found that Directory(server1)  had no sub-direcoty named temp,that cased that problem. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">BufferedImage <span class="built_in">source</span>Img =ImageIO.read(new FileInputStream(picture)); call </div><div class="line">ImageInputStream.createInputStreamInstance(Object input,boolean useCache,File cacheDir);</div><div class="line">//we can <span class="keyword">set</span> cacheDir by following</div><div class="line">ImageIO.setCacheDirectory(new File(<span class="string">"F:\\tools\\"</span>));</div><div class="line">//<span class="keyword">if</span> we not <span class="keyword">set</span>, dir will be temporary directory</div><div class="line">private static final Path tmpdir =Paths.get(<span class="keyword">do</span>Privileged(new GetPropertyAction(<span class="string">"java.io.tmpdir"</span>)));</div><div class="line"><span class="keyword">if</span> (dir == null) dir = tmpdir;</div></pre></td></tr></table></figure>
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>1.Using ImageIO to get picture size,we got a problem that were<br>  Caused by: java.nio.file.NoSuchFileException: /export/Domains/<em>.</]]>
+    </summary>
+    
+      <category term="ImageIO" scheme="http://luotao19861229.github.io/tags/ImageIO/"/>
+    
+      <category term="java" scheme="http://luotao19861229.github.io/categories/java/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[sync files using svn export add commit]]></title>
