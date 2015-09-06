@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://luotao19861229.github.io/"/>
-  <updated>2015-07-09T03:28:09.542Z</updated>
+  <updated>2015-09-06T02:36:57.247Z</updated>
   <id>http://luotao19861229.github.io/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://luotao19861229.github.io/2015/09/06/SwitchHosts%E4%B8%8D%E7%8E%B0%E5%AE%9E%E7%AA%97%E5%8F%A3/"/>
+    <id>http://luotao19861229.github.io/2015/09/06/SwitchHosts不现实窗口/</id>
+    <published>2015-09-06T02:33:28.000Z</published>
+    <updated>2015-09-06T02:36:29.000Z</updated>
+    <content type="html"><![CDATA[<p>title: SwitchHosts不现实窗口<br>date: 2015-09-06 10:33:28<br>tags:</p>
+<ul>
+<li>hosts</li>
+<li>switchhosts<br>1.原因<br>强制关机导致hosts文件保存异常，switchhosts软件不能正常使用<br>2.解决<br>关闭switchhosts软件，清除hosts文件内容，重启switchhosts软件 </li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>title: SwitchHosts不现实窗口<br>date: 2015-09-06 10:33:28<br>tags:</p>
+<ul>
+<li>hosts</li>
+<li>switchhosts<br>1.原因<br>强制关机导致hosts文件保存异常，switch]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[ImageIOCacheDirectory]]></title>
