@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://luotao19861229.github.io/"/>
-  <updated>2015-09-06T02:36:57.247Z</updated>
+  <updated>2015-12-30T07:11:12.277Z</updated>
   <id>http://luotao19861229.github.io/</id>
   
   <author>
@@ -13,6 +13,34 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[git-pull-request流程]]></title>
+    <link href="http://luotao19861229.github.io/2015/12/30/git-pull-request%E6%B5%81%E7%A8%8B/"/>
+    <id>http://luotao19861229.github.io/2015/12/30/git-pull-request流程/</id>
+    <published>2015-12-30T07:07:51.000Z</published>
+    <updated>2015-12-30T07:10:42.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Pull_Request流程">Pull Request流程</h2>
+<ol>
+<li>首先fork项目</li>
+<li>把fork过去的项目也就是你的项目clone到你的本地</li>
+<li>运行 <code>git remote add binux https://github.com/binux/pyspider.git</code> 把我的库添加为远端库</li>
+<li>运行 <code>git pull binux master</code> 拉取并合并到本地</li>
+<li>翻译内容</li>
+<li>commit后push到自己的库（<code>git push origin master</code>）</li>
+<li>登陆Github在你首页可以看到一个 <code>pull request</code> 按钮，点击它，填写一些说明信息，然后提交即可。</li>
+</ol>
+<p>1~3是初始化操作，执行一次即可。如有修改执行执行5~7既可。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="Pull_Request流程">Pull Request流程</h2>
+<ol>
+<li>首先fork项目</li>
+<li>把fork过去的项目也就是你的项目clone到你的本地</li>
+<li>运行 <code>git remote add binux ht]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[]]></title>
